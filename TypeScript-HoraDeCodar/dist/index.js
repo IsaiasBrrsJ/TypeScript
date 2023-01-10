@@ -75,4 +75,32 @@ function greeting(name, greet) {
 }
 greeting("jose");
 greeting("pedro, sir");
-//Interfaces
+;
+function sumNumbers(nums) {
+    return nums.n1 + nums.n2;
+}
+;
+//narrowing
+//checagem tipos
+function doSomething(info) {
+    if (typeof info === "number") {
+        console.log("tipo numerico");
+    }
+    else {
+        console.log("nao foi passado um tipo numerico");
+    }
+}
+;
+doSomething(5);
+doSomething(true);
+//generics
+function showArraysItens(array) {
+    array.forEach((item) => {
+        console.log(item);
+    });
+}
+;
+const a1 = [1, 2, 3];
+const a2 = ["A", "B", "C"];
+showArraysItens(a1);
+showArraysItens(a2);
